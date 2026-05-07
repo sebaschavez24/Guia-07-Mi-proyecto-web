@@ -1,23 +1,62 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
-    text-align: center;
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
 }
+
+.contenedor {
+    width: 500px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
 h1 {
     color: #2c3e50;
 }
-input {
-    padding: 8px;
-    margin: 10px;
+
+h2 {
+    color: #34495e;
 }
+
+.descripcion {
+    color: #555;
+    font-size: 15px;
+}
+
+.seccion {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f8fbff;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
 button {
-    padding: 8px 15px;
+    padding: 10px 18px;
     background-color: #3498db;
     color: white;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
 }
+
 button:hover {
-    background-color:#2980b9;
+    background-color: #2980b9;
+}
+
+#resultado,
+#mensajeCorreo {
+    font-weight: bold;
 }

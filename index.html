@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI PROYECTO WEB</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>MI PROYECTO WEB POR BRYAN CHAVEZ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bienvenido a mi Pagina Web por Sebastian Chavez</h1>
-    <p>Este proyecto fue publicado usando GitHub.</p>
-    <p>Ingrese su nombre:</p>
-    
-    <input type="text" id="nombre" placeholder="Escribe tu nombre" />
-    <button onclick="saludar()">Saludar</button>
-    <p id="resultado"></p>
 
-    <h2>Formulario de contacto</h2>
-    <input type="email" id="correo" placeholder="Ingrese su correo">
-    <button onclick="validarCorreo()">Validar correo</button>
-    <p id="mensajeCorreo"></p>
+    <main class="contenedor">
+        <h1>Bienvenido a mi Página Web por BRYAN CHAVEZ</h1>
 
-    <!-- Enlace al archivo JavaScript -->
+        <p class="descripcion">
+            Este proyecto fue publicado usando GitHub y será mejorado mediante nuevas versiones.
+        </p>
+
+        <section class="seccion">
+            <h2>Saludo personalizado</h2>
+
+            <p>Ingrese su nombre:</p>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+            <button onclick="saludar()">Saludar</button>
+
+            <p id="resultado"></p>
+        </section>
+
+        <section class="seccion">
+            <h2>Formulario de contacto</h2>
+
+            <input type="email" id="correo" placeholder="Ingrese su correo">
+            <button onclick="validarCorreo()">Validar correo</button>
+
+            <p id="mensajeCorreo"></p>
+        </section>
+    </main>
     <script src="script.js"></script>
 
 </body>
