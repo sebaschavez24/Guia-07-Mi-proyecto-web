@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI PROYECTO WEB POR BRYAN CHAVEZ</title>
+    <title>MI PROYECTO WEB</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <main class="contenedor">
-        <h1>Bienvenido a mi Página Web por BRYAN CHAVEZ</h1>
 
-        <p class="descripcion">
-            Este proyecto fue publicado usando GitHub y será mejorado mediante nuevas versiones.
-        </p>
+        <header class="encabezado">
+            <h1>Bienvenido a mi Página Web</h1>
+            <p class="autor">Desarrollado por Sebastian Chavez</p>
+        </header>
 
-        <section class="seccion">
+        <section class="tarjeta">
             <h2>Saludo personalizado</h2>
-
             <p>Ingrese su nombre:</p>
+
             <input type="text" id="nombre" placeholder="Escribe tu nombre">
             <button onclick="saludar()">Saludar</button>
 
             <p id="resultado"></p>
         </section>
 
-        <section class="seccion">
+        <section class="tarjeta">
             <h2>Formulario de contacto</h2>
+            <p>Ingrese su correo electrónico:</p>
 
             <input type="email" id="correo" placeholder="Ingrese su correo">
             <button onclick="validarCorreo()">Validar correo</button>
 
             <p id="mensajeCorreo"></p>
         </section>
+
+        <footer class="pie">
+            <p>Proyecto publicado usando GitHub</p>
+        </footer>
+
     </main>
+
     <script src="script.js"></script>
 
 </body>
