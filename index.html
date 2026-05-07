@@ -27,12 +27,17 @@
 
         <section class="tarjeta">
             <h2>Formulario de contacto</h2>
-            <p>Ingrese su correo electrónico:</p>
+            <p>Ingrese su correo electrónico y un mensaje:</p>
 
             <input type="email" id="correo" placeholder="Ingrese su correo">
-            <button onclick="validarCorreo()">Validar correo</button>
+
+            <textarea id="mensajeUsuario" placeholder="Escriba su mensaje"></textarea>
+
+            <button onclick="validarFormulario()">Enviar formulario</button>
 
             <p id="mensajeCorreo"></p>
+
+            <div id="resumenDatos" class="resumen"></div>
         </section>
 
         <footer class="pie">

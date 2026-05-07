@@ -103,3 +103,40 @@ button:hover {
     color: #666;
     font-size: 14px;
 }
+textarea {
+    padding: 11px;
+    margin: 10px 0;
+    width: 85%;
+    height: 90px;
+    border: 1px solid #bfc9d9;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+}
+
+.resumen {
+    margin-top: 15px;
+    padding: 14px;
+    background-color: #eafaf1;
+    border-left: 5px solid #2ecc71;
+    border-radius: 8px;
+    text-align: left;
+    display: none;
+}
+
+.resumen h3 {
+    margin-top: 0;
+    color: #1e8449;
+}
+
+.resumen p {
+    margin: 6px 0;
+    color: #2c3e50;
+}
