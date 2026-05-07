@@ -1,21 +1,31 @@
 function saludar() {
-    // Obtener el valor del input
-    let nombre = document.getElementById("nombre").value;
+    let nombre = document.getElementById("nombre").value.trim();
+    let resultado = document.getElementById("resultado");
 
-    // Validar si el usuario escribió algo
     if (nombre === "") {
-        document.getElementById("resultado").innerText =
-        "Por favor, ingresa tu nombre.";
+        resultado.innerText = "Por favor, ingresa tu nombre.";
+        resultado.style.color = "red";
+    } else if (nombre.length < 3) {
+        resultado.innerText = "El nombre debe tener al menos 3 caracteres.";
+        resultado.style.color = "red";
     } else {
-        document.getElementById("resultado").innerText =
-        "Hola " + nombre + ", bienvenido al sistema.";
+        resultado.innerText = "Hola " + nombre + ", bienvenido al sistema.";
+        resultado.style.color = "green";
     }
 }
+
 function validarCorreo() {
-    let correo = document.getElementById("correo").value;
+    let correo = document.getElementById("correo").value.trim();
+    let mensajeCorreo = document.getElementById("mensajeCorreo");
+
     if (correo === "") {
-        document.getElementById("mensajeCorreo").innerText = "Debe ingresar un correo.";
+        mensajeCorreo.innerText = "Debe ingresar un correo.";
+        mensajeCorreo.style.color = "red";
+    } else if (!correo.includes("@") || !correo.includes(".")) {
+        mensajeCorreo.innerText = "Ingrese un correo electrónico válido.";
+        mensajeCorreo.style.color = "red";
     } else {
-    document.getElementById("mensajeCorreo").innerText = "Correo  registrado correctamente.";
-}
+        mensajeCorreo.innerText = "Correo registrado correctamente.";
+        mensajeCorreo.style.color = "green";
+    }
 }
